@@ -1,0 +1,30 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset 'utf-8';
+@import "variables"; // see all variables here
+@import "bootstrap/scss/bootstrap";
+$fa-font-path: "fonts/font-awesome/";
+@import "font-awesome";
+
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.img-profile {
+    width: ($font-size-base * 11.00);
+}
+
+// -- inline social links list --
+ul>li.list-inline-item>a.fa {
+    font-size: $font-size-xxl;
+    padding-left: ($font-size-base * 0.40);
+    padding-right: ($font-size-base * 0.40);
+    color: white;
+}
+
+.btn.btn-lg.btn-outline-info {
+    border-radius: $font-size-xxl;
+}

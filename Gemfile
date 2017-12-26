@@ -20,6 +20,10 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'bootstrap', '~> 4.0.0.beta'
+  gem 'autoprefixer-rails'
+  gem 'jekyll-assets'
+  gem 'jekyll-font-awesome-sass'
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-paginate'
   gem 'jekyll-twitter-plugin'

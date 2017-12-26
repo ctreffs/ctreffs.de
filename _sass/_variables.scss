@@ -1,0 +1,25 @@
+// Bootstrap overrides
+
+//$custom-font-size: 20px;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+//$font-family-base: "Lato", Helvetica, Arial, sans-serif;
+$font-size-xxl: ($font-size-base * 2.00);
+
+$body-bg:    #141d26;
+$body-color: #ffffff;
+
+$primary:           #1DA1F2;
+$secondary:         #8899a6;
+$link-color:              #17a2b8; //#1DA1F2; 
+$link-decoration:           none;
+$link-hover-color:          darken($link-color, 20%);
+$link-hover-decoration:     none;
+
