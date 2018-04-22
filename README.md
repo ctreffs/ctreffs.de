@@ -15,13 +15,15 @@ I'm the forgetful type therefore this readme serves as a reminder how to build a
 `bundle exec yarn upgrade`
 
 
-## Building
+## Build
 
 `bundle exec jekyll clean`
 
 `bundle exec jekyll build`
 
-`bundle exec jekyll serve --watch`
+`bundle exec jekyll build --watch`
+
+`bundle exec jekyll serve --incremental --watch`
 
 ## Check
 
@@ -29,4 +31,7 @@ I'm the forgetful type therefore this readme serves as a reminder how to build a
 
 ## Publish
 
+### Web hosting providers (FTP)Permalink
 
+1. `bundle exec jekyll build` 
+2. copy contents of the generated `_site` folder to host's `httpdocs` or `public_html` folder
