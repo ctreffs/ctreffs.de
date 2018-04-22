@@ -1,16 +1,29 @@
-# Building
+# ctreffs.de
+
+I'm the forgettful type therefore this readme serves as a reminder how to build and maintain this repo.
+
+## Tools
 
 <https://jekyllrb.com/docs/usage/>
 
-`bundle exec jekyll build`
+## Update
+
+`bundle update`
+
+`bundle exec yarn upgrade`
+
+
+## Building
 
 `bundle exec jekyll clean`
 
+`bundle exec jekyll build`
 
+`bundle exec jekyll serve --watch`
 
-`bundle exec jekyll build --watch`
-# => The current folder will be generated into ./_site,
-#    watched for changes, and regenerated automatically.
+## Check
 
+`bundle exec jekyll doctor`
 
-Default URL is set to http://localhost:4000 in development environment. 3.3.0
+## Publish
+

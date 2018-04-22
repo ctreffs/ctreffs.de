@@ -1,77 +1,20 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-# default config: https://jekyllrb.com/docs/configuration/#default-configuration
-title: Christian Treffs
-author: Christian Treffs
+author: {github: ctreffs, location: Germany, name: Christian Treffs, twitter: chrisdailygrind}
+baseurl: ''
 email: webmaster@ctreffs.de
-# >- this means to ignore newlines until "baseurl:"
-  #Write an awesome description for your new site here. You can edit this
-  #line in _config.yml. It will appear in your document head meta (for
-  #Google search results) and in your feed.xml site description.
-# description: "" 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+encoding: utf-8
+exclude: []
+font-awesome: {assets: true}
+liquid: {error_mode: strict}
+markdown: kramdown
+plugins: [autoprefixer-rails, bootstrap, jekyll-feed, jekyll-font-awesome-sass]
+profile_picture: https://secure.gravatar.com/avatar/6019de0fa6a933ee5282e1d623afd991?s=400
+sass:
+  load_paths: [_sass, node_modules]
+social:
+- github:
+  - {name: ctreffs}
+  - {url: 'https://github.com/ctreffs'}
 strict_front_matter: true
 timezone: Europe/Berlin
-encoding: utf-8 
-
-social:
-  - github:
-      - name: ctreffs
-      - url: https://github.com/ctreffs
-
-profile_picture: https://secure.gravatar.com/avatar/6019de0fa6a933ee5282e1d623afd991?s=400
-
-# Build settings
-markdown: kramdown
-#theme: minima
-#theme: minimal-mistakes-jekyll
-
-liquid:
-  error_mode: strict
-
-# how to bootstrap: https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
-plugins:
-  - autoprefixer-rails
-  - bootstrap
-  - jekyll-feed
-  - jekyll-font-awesome-sass
-  #- jekyll-paginate
-  #- jekyll-twitter-plugin
-  #- jekyll-assets
-  #- jekyll-livereload
-
-font-awesome:
-  assets: true
-
-sass:
-    load_paths:
-        - _sass
-        - node_modules
-exclude: []
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+title: Christian Treffs
+url: https://ctreffs.de
