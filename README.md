@@ -4,7 +4,9 @@ I'm the forgettful type therefore this readme serves as a reminder how to build 
 
 ## Tools
 
-<https://jekyllrb.com/docs/usage/>
+- [Bundler](https://bundler.io/v1.16)
+- [Jekyll](https://jekyllrb.com/docs/usage/)
+- [Yarn](https://yarnpkg.com/en/docs/usage)
 
 ## Update
 
@@ -26,4 +28,5 @@ I'm the forgettful type therefore this readme serves as a reminder how to build 
 `bundle exec jekyll doctor`
 
 ## Publish
+
 
