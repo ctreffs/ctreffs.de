@@ -3,5 +3,9 @@
     "bootstrap": "4.0.0-beta.2",
     "jquery": "^3.2.1",
     "popper.js": "1.12.9"
-  }
+  },
+  "name": "ctreffs.de",
+  "varsion": "1.0.0",
+  "description": "website of Christian Treffs",
+  "license": "CC BY-ND"
 }
