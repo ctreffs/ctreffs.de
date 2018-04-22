@@ -1,6 +1,10 @@
 #!/bin/bash
 
+source ctreffs.de.secrets.config
+
 set -e
+
+rm -rdf _site/
 
 yarn install
 bundle install
@@ -11,4 +15,4 @@ bundle exec jekyll doctor
 
 bundle exec jekyll build
 
-open ./_site
+rsync -crvzh --progress --rsh='ssh -p22' --delete-after --delete-excluded _site/* $DEST
