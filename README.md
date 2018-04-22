@@ -8,6 +8,12 @@ I'm the forgetful type therefore this readme serves as a reminder how to build a
 - [Jekyll](https://jekyllrb.com/docs/usage/)
 - [Yarn](https://yarnpkg.com/en/docs/usage)
 
+## Install
+
+`yarn install`
+
+`bundle install`
+
 ## Update
 
 `bundle update`
@@ -26,6 +32,10 @@ I'm the forgetful type therefore this readme serves as a reminder how to build a
 `bundle exec jekyll serve --incremental --watch`
 
 ## Check
+
+`yarn check`
+
+`yarn check --integrity`
 
 `bundle exec jekyll doctor`
 
