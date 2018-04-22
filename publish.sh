@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ctreffs.de.secrets.config
+source ctreffs.de.secrets.sh
 
 set -e
 
