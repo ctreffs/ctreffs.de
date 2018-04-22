@@ -2,7 +2,7 @@ author: {github: ctreffs, location: Germany, name: Christian Treffs, twitter: ch
 baseurl: ''
 email: webmaster@ctreffs.de
 encoding: utf-8
-exclude: [yarn-error.log, publish.sh]
+exclude: [Gemfile, Gemfile.lock, README.md, node_modules, package.json, publish.sh, yarn.lock, yarn-error.log]
 font-awesome: {assets: true}
 liquid: {error_mode: strict}
 markdown: kramdown
