@@ -1,6 +1,6 @@
 # ctreffs.de
 
-I'm the forgettful type therefore this readme serves as a reminder how to build and maintain this repo.
+I'm the forgetful type therefore this readme serves as a reminder how to build and maintain this repo.
 
 ## Tools
 
