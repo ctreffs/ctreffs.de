@@ -5,7 +5,9 @@
     "popper.js": "1.12.9"
   },
   "description": "website of Christian Treffs",
+  "homepage": "https://ctreffs.de",
   "license": "CC-BY-ND-4.0",
   "name": "ctreffs.de",
+  "repository": "github:ctreffs/ctreffs.de",
   "varsion": "1.0.0"
 }
