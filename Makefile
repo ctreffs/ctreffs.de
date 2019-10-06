@@ -28,6 +28,14 @@ watch:
 serve: check
 	bundle exec jekyll serve --incremental --watch
 
+outdated: check
+	bundle exec yarn outdated
+	bundle outdated
+
+upgrade-yarn:
+	bundle exec yarn upgrade --latest
+	yarn check
+	yarn check --integrity
 
 publish: clean check build
 	source ctreffs.de.secrets.sh
