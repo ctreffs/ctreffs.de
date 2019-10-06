@@ -7,7 +7,7 @@ install:
 	yarn install
 	yarn check
 	yarn check --integrity
-	bundle install
+	bundle install --jobs=4
 	bundle exec jekyll doctor
 
 clean:
@@ -17,7 +17,7 @@ reset: clean
 	rm Gemfile.lock
 	rm -rdf node_modules
 
-build:
+build: install
 	bundle exec jekyll build
 
 clean-build: clean build
@@ -36,6 +36,10 @@ upgrade-yarn:
 	bundle exec yarn upgrade --latest
 	yarn check
 	yarn check --integrity
+
+upgrade-bundle:
+	bundle update --all --jobs=4
+	bundle exec jekyll doctor
 
 publish: clean check build
 	source ctreffs.de.secrets.sh
