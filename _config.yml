@@ -6,7 +6,7 @@ exclude: [Gemfile, Gemfile.lock, README.md, package.json, publish.sh, yarn.lock,
 font-awesome: {assets: true}
 liquid: {error_mode: strict}
 markdown: kramdown
-plugins: [autoprefixer-rails, bootstrap, jekyll-feed, jekyll-font-awesome-sass]
+plugins: [autoprefixer-rails, bootstrap, jekyll-feed, jekyll-assets, jekyll-font-awesome-sass]
 profile_picture: https://secure.gravatar.com/avatar/6019de0fa6a933ee5282e1d623afd991?s=400
 sass:
   load_paths: [_sass, node_modules]
