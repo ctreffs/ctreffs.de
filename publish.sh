@@ -4,6 +4,7 @@ source ctreffs.de.secrets.sh
 
 set -e
 
+bundle exec jekyll clean
 rm -rdf _site/
 
 yarn install

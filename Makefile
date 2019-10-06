@@ -18,7 +18,7 @@ reset: clean
 	rm -rdf node_modules
 
 build: install
-	bundle exec jekyll build
+	bundle exec jekyll build --trace --unpublished
 
 clean-build: clean build
 
