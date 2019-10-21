@@ -1,3 +1,5 @@
+include ctreffs.de.secrets.make
+
 check:
 	yarn check
 	yarn check --integrity
@@ -17,13 +19,16 @@ reset: clean
 	rm Gemfile.lock
 	rm -rdf node_modules
 
-build: install
+buildDev: install
 	bundle exec jekyll build --trace --unpublished
 
-clean-build: clean build
+build: install
+	bundle exec jekyll build
+
+clean-build: clean buildDev
 
 watch:
-	bundle exec jekyll build --watch
+	bundle exec jekyll build --watch --trace --unpublished
 
 serve: check
 	bundle exec jekyll serve --incremental --watch
@@ -42,5 +47,5 @@ upgrade-bundle:
 	bundle exec jekyll doctor
 
 publish: clean check build
-	source ctreffs.de.secrets.sh
-	rsync -crvzh --progress --rsh='ssh -p22' --delete-after --delete-excluded _site/* $DEST
+	echo "Uploading to: $(SERVER_DEST)"
+	rsync -crvzh --progress --rsh='ssh -p22' --delete-after --delete-excluded _site/* $(SERVER_DEST)
