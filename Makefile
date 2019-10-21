@@ -48,4 +48,4 @@ upgrade-bundle:
 
 publish: clean check build
 	echo "Uploading to: $(SERVER_DEST)"
-	rsync -crvzh --progress --rsh='ssh -p22' --delete-after --delete-excluded _site/* $(SERVER_DEST)
+	rsync -crvzh --progress --rsh='ssh -p22' --exclude '*secrets*' --exclude 'Makefile' --delete-after --delete-excluded _site/* $(SERVER_DEST)
