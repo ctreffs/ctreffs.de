@@ -4,7 +4,7 @@ https://keybase.io/ctreffs
 
 I hereby claim:
 
-  * I am an admin of http://ctreffs.de
+  * I am an admin of https://ctreffs.de
   * I am ctreffs (https://keybase.io/ctreffs) on keybase.
   * I have a public key ASAJ3TaFSxprW0Q4Q-Fz_74myNro5TgdNACMxd64Zlq6SQo
 
@@ -20,32 +20,33 @@ To do so, I am signing this object:
       "username": "ctreffs"
     },
     "merkle_root": {
-      "ctime": 1519975271,
-      "hash": "f77117f9317919bb140237afadf90c7089cabd133d7616975c054b594e83204bdafdf6d74fc0e7bb10d111680f91582ac751d093dfcab231a69efb4013d7871a",
-      "hash_meta": "6d6eea07faa9b7cbbc23ca1af76091fdc3fc5a590a94ef86a9ab40e5329a90c8",
-      "seqno": 2174624
+      "ctime": 1572363066,
+      "hash": "1c803ab73d3326b66ccd87f6c1e0de413c60867d9165f688395d8c86e89cf03713febb66eb5c2f1fe8bbf95460385257665a75a44fc341347d07d54265bf9be7",
+      "hash_meta": "8ff056887f55a563901900ec8c81998335108cb6e022e33b4fbadf430eb13ca2",
+      "seqno": 8491611
     },
     "service": {
+      "entropy": "HMYr10TgnmvQDJXyq6UCbOa3",
       "hostname": "ctreffs.de",
-      "protocol": "http:"
+      "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 1
+    "version": 2
   },
   "client": {
     "name": "keybase.io go client",
-    "version": "1.0.44"
+    "version": "4.7.2"
   },
-  "ctime": 1519975287,
+  "ctime": 1572363074,
   "expire_in": 504576000,
-  "prev": "e34af0b184fdf00b40817c64b1dcbe1f5ee96d8443dbecf8c820970d69c282c9",
-  "seqno": 20,
+  "prev": "dbf2147d58b25377f7b51b8e0afe87f95c391e0394b2b82482fa2906b6772a2f",
+  "seqno": 35,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgCd02hUsaa1tEOEPhc/++Jsja6OU4HTQAjMXeuGZaukkKp3BheWxvYWTFA0F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwODE5YjNhMmM2YzY5MzJkZDgyMzA0NGFkNTBjM2JkNTg5ZjBhNzc1ZWRlNmE1YjUwMTRiY2FlOWMwNDg4ZDRmZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDlkZDM2ODU0YjFhNmI1YjQ0Mzg0M2UxNzNmZmJlMjZjOGRhZThlNTM4MWQzNDAwOGNjNWRlYjg2NjVhYmE0OTBhIiwidWlkIjoiNDRkZWI5MmY2MjJjOGRhZmQwZWZiYzA3OWZlNWMzMTkiLCJ1c2VybmFtZSI6ImN0cmVmZnMifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTk5NzUyNzEsImhhc2giOiJmNzcxMTdmOTMxNzkxOWJiMTQwMjM3YWZhZGY5MGM3MDg5Y2FiZDEzM2Q3NjE2OTc1YzA1NGI1OTRlODMyMDRiZGFmZGY2ZDc0ZmMwZTdiYjEwZDExMTY4MGY5MTU4MmFjNzUxZDA5M2RmY2FiMjMxYTY5ZWZiNDAxM2Q3ODcxYSIsImhhc2hfbWV0YSI6IjZkNmVlYTA3ZmFhOWI3Y2JiYzIzY2ExYWY3NjA5MWZkYzNmYzVhNTkwYTk0ZWY4NmE5YWI0MGU1MzI5YTkwYzgiLCJzZXFubyI6MjE3NDYyNH0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJjdHJlZmZzLmRlIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC40NCJ9LCJjdGltZSI6MTUxOTk3NTI4NywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJlMzRhZjBiMTg0ZmRmMDBiNDA4MTdjNjRiMWRjYmUxZjVlZTk2ZDg0NDNkYmVjZjhjODIwOTcwZDY5YzI4MmM5Iiwic2Vxbm8iOjIwLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQEdwd3fY7m9qneXC+2+qDqE1CXCFx8spbs4gTuGWE5gKNki0jYveZbN4YFeepb1ZCV9dB2UnN3YerARUBKL8+QOoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCALANub/oJXPzqiZArOnlYSk426OBj2bQE9QtNV9SIYM6N0YWfNAgKndmVyc2lvbgE=
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgCd02hUsaa1tEOEPhc/++Jsja6OU4HTQAjMXeuGZaukkKp3BheWxvYWTESpcCI8Qg2/IUfViyU3f3tRuOCv6H+Vw5HgOUsrgkgvopBrZ3Ki/EIOpUAtBDhUCLggCTSkMoIqSml+0+DkVcgxPAR6OwZ8WFAgHCo3NpZ8RA6R9uXGvW1Z6gsZNwmre+zIzX+amDXD1W1puD/JsXfgK5Yo35zrvo20NxHqscmcfbeRyW+Dy64nqyWVv7U/2vBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBaA3HPIJPJxbd4TJ/Vxb8VAquNtVKz3+MykA70BAgDLo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
