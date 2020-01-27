@@ -14,6 +14,7 @@ install:
 
 clean:
 	bundle exec jekyll clean
+	rm -rd .bundle/
 
 reset: clean
 	rm Gemfile.lock
