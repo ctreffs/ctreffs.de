@@ -1,5 +1,7 @@
 # ctreffs.de
 
+[![Build Status](https://travis-ci.com/ctreffs/ctreffs.de.svg?branch=master)](https://travis-ci.com/ctreffs/ctreffs.de)
+
 I'm the forgetful type therefore this readme serves as a reminder how to build and maintain this repo.
 
 ## Tools
@@ -7,6 +9,13 @@ I'm the forgetful type therefore this readme serves as a reminder how to build a
 - [Bundler](https://bundler.io/v1.16)
 - [Jekyll](https://jekyllrb.com/docs/usage/)
 - [Yarn](https://yarnpkg.com/en/docs/usage)
+
+```sh
+brew install yarn
+gem update --system
+gem install bundler
+gem install jekyll
+```
 
 ## Install
 

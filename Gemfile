@@ -18,18 +18,22 @@ gem "minima", "~> 2.0"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 
+# https://github.com/nielsenramon/chalk/issues/195#issuecomment-549992637
+gem "sprockets", "~> 3.7"
+gem "font-awesome-sass", "~> 4.7.0"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'bootstrap'
-  gem 'autoprefixer-rails'
-  gem 'jekyll-assets'
-  gem 'jekyll-font-awesome-sass', "0.1.0"
-  gem "jekyll-feed"
-  gem 'jekyll-paginate'
-  gem 'jekyll-twitter-plugin'
+  gem "bootstrap", "~> 4.3.1"
+  gem "autoprefixer-rails", "~> 9.6.4"
+  gem "jekyll-assets", "~> 3.0.12"
+  gem "jekyll-font-awesome-sass", "0.1.0"
+  gem "jekyll-feed", "~> 0.11.0"
+  gem "jekyll-paginate", "~> 1.1.0"
+  gem "jekyll-twitter-plugin", "~> 2.0.0"
   #gem "jekyll-livereload"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
