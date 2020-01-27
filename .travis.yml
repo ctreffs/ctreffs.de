@@ -4,9 +4,10 @@ language: ruby
 rvm:
   - 2.5.1 # ruby environment
 addons:
-homebrew:
-  packages:
-  - yarn
+  homebrew:
+    update: true
+    packages: 
+    - $HOME/Library/Caches/Homebrew
 cache:
   apt: true
   yarn: true
@@ -15,6 +16,7 @@ cache:
     - "$HOME/.npm"
     - "$HOME/.cache"
 before_install: # if "install" is overridden
+  - brew install yarn
   - gem install bundler
   - gem install jekyll
 cache:
