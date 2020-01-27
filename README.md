@@ -10,6 +10,13 @@ I'm the forgetful type therefore this readme serves as a reminder how to build a
 - [Jekyll](https://jekyllrb.com/docs/usage/)
 - [Yarn](https://yarnpkg.com/en/docs/usage)
 
+```sh
+brew install yarn
+gem update --system
+gem install bundler
+gem install jekyll
+```
+
 ## Install
 
 `yarn install`
