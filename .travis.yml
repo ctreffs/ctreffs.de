@@ -1,11 +1,21 @@
 os: osx
+dist: bionic
 language: ruby
 sudo: required
-dist: bionic
+rvm:
+  - 1.29.8
+cache:
+  apt: true
+  yarn: true
+  directories:
+    - node_modules
+    - "$HOME/.npm"
+    - "$HOME/.cache"
+before_install:
+  - nvm install node
+  - node --version
+  - gem install bundler
 install:
-  - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-  - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-  - sudo apt update -y -qq && sudo apt install yarn -y -qq
   - make install
 script:
   - make check
