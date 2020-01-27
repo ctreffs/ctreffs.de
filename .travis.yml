@@ -1,7 +1,6 @@
 os: osx
 dist: bionic
 language: ruby
-sudo: required
 rvm:
   - 2.5.1 # ruby environment
 cache:
@@ -11,11 +10,19 @@ cache:
     - node_modules
     - "$HOME/.npm"
     - "$HOME/.cache"
-before_install:
+before_install: # if "install" is overridden
   - nvm install node
   - node --version
   - gem install bundler
+  # Repo for Yarn
+  #- sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
+  #- echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+  #- sudo apt-get update -qq
+  #- sudo apt-get install -y -qq yarn
+cache:
+  yarn: true
 install:
+  - touch ctreffs.de.secrets.make # add dummy secrets
   - make install
 script:
   - make check
