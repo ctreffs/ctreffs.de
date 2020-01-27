@@ -34,7 +34,9 @@ serve: check
 	bundle exec jekyll serve --incremental --watch
 
 outdated: check
+	echo "Outdated yarn:"
 	bundle exec yarn outdated
+	echo "Outdated gems:"
 	bundle outdated
 
 upgrade-yarn:
@@ -44,7 +46,7 @@ upgrade-yarn:
 
 upgrade-bundle:
 	bundle update --all --jobs=4
-	bundle exec jekyll doctor
+	bundle exec jekyll doctor -t
 
 publish: clean check build
 	echo "Uploading to: $(SERVER_DEST)"
