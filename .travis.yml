@@ -16,6 +16,7 @@ cache:
     - "$HOME/.cache"
 before_install: # if "install" is overridden
   - gem install bundler
+  - gem install jekyll
 cache:
   yarn: true
 install:
