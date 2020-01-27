@@ -3,7 +3,7 @@ dist: bionic
 language: ruby
 sudo: required
 rvm:
-  - 1.29.8
+  - 2.5.1 # ruby environment
 cache:
   apt: true
   yarn: true
