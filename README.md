@@ -1,5 +1,7 @@
 # ctreffs.de
 
+[![Build Status](https://travis-ci.com/ctreffs/ctreffs.de.svg?branch=master)](https://travis-ci.com/ctreffs/ctreffs.de)
+
 I'm the forgetful type therefore this readme serves as a reminder how to build and maintain this repo.
 
 ## Tools
