@@ -56,5 +56,5 @@ jobs:
       - name: Check markdown links
         uses: gaurav-nelson/github-action-markdown-link-check@master
         with:
-          folder-path: '_data, _includes, _layouts, assets'
+          folder-path: '_data, _drafts, _includes, _layouts, _pages, _posts, assets'
           file-path: './README.md, ./LICENSE.md, ./index.md'
