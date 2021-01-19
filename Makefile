@@ -16,7 +16,7 @@ install: installYarn installJekyll
 
 clean:
 	bundle exec jekyll clean
-	rm -rd .bundle/
+	-rm -rd .bundle/
 
 reset: clean
 	rm Gemfile.lock
@@ -51,7 +51,7 @@ upgrade-bundle:
 	bundle update --all --jobs=4
 	bundle exec jekyll doctor -t
 
-publish: clean check build
+publish: clean install check build
 	echo "Uploading to: $(SERVER_DEST)"
 	rsync -crvzh --progress --rsh='ssh -p22' --exclude '*secrets*' --exclude 'Makefile' --delete-after --delete-excluded _site/* $(SERVER_DEST)
 
