@@ -15,8 +15,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
+  # This workflow contains a single job called "Build"
+  Build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -46,9 +46,10 @@ jobs:
         run: |
           touch ctreffs.de.secrets.make # add dummy secrets
           brew install yarn
-          yarn install
-      
-      - name: Check & Build
-        run: |
-          bundle exec jekyll build
+          make installYarn
 
+      - name: Check
+        run: make check
+      
+      - name: Build
+        run: make build
