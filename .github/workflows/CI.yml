@@ -38,6 +38,7 @@ jobs:
         run: |
           touch ctreffs.de.secrets.make # add dummy secrets
           brew install yarn
+          gem install bundler
           make install
       
       - name: Check & Build
