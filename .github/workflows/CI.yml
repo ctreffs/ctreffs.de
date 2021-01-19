@@ -53,8 +53,8 @@ jobs:
       - name: Build
         run: make build
 
-      - name: markdown-link-check
+      - name: Check markdown links
         uses: gaurav-nelson/github-action-markdown-link-check@master
         with:
-          folder-path: '_data, _includes, _layouts, _site, _pages, _posts'
+          folder-path: '_data, _includes, _layouts, _site, assets'
           file-path: './README.md, ./LICENSE.md, ./index.md'
