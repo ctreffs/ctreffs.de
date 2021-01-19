@@ -52,3 +52,10 @@ upgrade-bundle:
 publish: clean check build
 	echo "Uploading to: $(SERVER_DEST)"
 	rsync -crvzh --progress --rsh='ssh -p22' --exclude '*secrets*' --exclude 'Makefile' --delete-after --delete-excluded _site/* $(SERVER_DEST)
+
+help:
+	bundle exec jekyll help
+
+generateSecretsExample:
+	touch example.secrets.make
+	@echo "SERVER_DEST := <USERNAME>@<SSH_SERVER_ADDRESS>:<FOLDER>" >> example.secrets.make
