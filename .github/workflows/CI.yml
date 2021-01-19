@@ -41,7 +41,6 @@ jobs:
           ruby-version: 2.6.3 # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      # Setup environment
       - name: Setup
         run: |
           touch ctreffs.de.secrets.make # add dummy secrets
@@ -53,3 +52,6 @@ jobs:
       
       - name: Build
         run: make build
+
+      - name: markdown-link-check
+        uses: gaurav-nelson/github-action-markdown-link-check@master
