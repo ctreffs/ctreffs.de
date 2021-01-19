@@ -1,7 +1,5 @@
 // Bootstrap overrides
 
-//$custom-font-size: 20px;
-
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
@@ -10,7 +8,6 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-//$font-family-base: "Lato", Helvetica, Arial, sans-serif;
 $font-size-xxl: ($font-size-base * 2.00);
 
 $body-bg:    #141d26;
