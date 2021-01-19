@@ -55,3 +55,6 @@ jobs:
 
       - name: markdown-link-check
         uses: gaurav-nelson/github-action-markdown-link-check@master
+        with:
+          folder-path: '_data, _includes, _layouts, _site, _pages, _posts'
+          file-path: './README.md, ./LICENSE.md, ./index.md'
