@@ -46,9 +46,9 @@ jobs:
         run: |
           touch ctreffs.de.secrets.make # add dummy secrets
           brew install yarn
-          make install
+          yarn install
       
       - name: Check & Build
         run: |
-          make check
-          make build
+          bundle exec jekyll build
+
