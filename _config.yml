@@ -1,4 +1,7 @@
 author: {github: ctreffs, location: Germany, name: Christian Treffs, twitter: chrisdailygrind}
+title: Christian Treffs
+description: 'Personal website of Christian Treffs'
+url: https://ctreffs.de
 baseurl: ''
 email: webmaster@ctreffs.de
 encoding: utf-8
@@ -6,9 +9,9 @@ include: [_pages]
 exclude: [vendor, Gemfile, Gemfile.lock, README.md, package.json, Makefile, yarn.lock, yarn-error.log, ctreffs.de.secrets.make]
 font-awesome: {assets: true}
 liquid: {error_mode: strict}
-markdown: kramdown
-plugins: [autoprefixer-rails, bootstrap, jekyll-feed, jekyll-assets, jekyll-font-awesome-sass]
-profile_picture: https://secure.gravatar.com/avatar/6019de0fa6a933ee5282e1d623afd991?s=400
+markdown: Pandoc #kramdown
+plugins: [autoprefixer-rails, bootstrap, jekyll-feed, jekyll-assets, jekyll-font-awesome-sass, jekyll-pandoc]
+profile_picture: https://secure.gravatar.com/avatar/6019de0fa6a933ee5282e1d623afd991
 sass:
   load_paths: [_sass, node_modules]
 social:
@@ -17,5 +20,8 @@ social:
   - {url: 'https://github.com/ctreffs'}
 strict_front_matter: true
 timezone: Europe/Berlin
-title: Christian Treffs
-url: https://ctreffs.de
+pandoc:
+  extensions:
+    - mathjax
+    #- csl: _styles/apa.csl
+    #- bibliography: bibliography/references.bib

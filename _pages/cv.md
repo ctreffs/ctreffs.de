@@ -3,10 +3,10 @@ layout: default
 permalink: /cv/
 title: "CV"
 ---
+<!-- https://lebenslauf.com -->
+<aside class="contact">
 
-<!--<aside class="contact">-->
-
-![Christian Treffs](src/img/Bewerbungsfoto-2015.jpg)
+![Christian Treffs]({{site.profile_picture}}?s=200)
 
 #### Adresse  
 
@@ -33,7 +33,7 @@ Niedernhausener Str. 49<br/>60326 Frankfurt am Main
 
 <https://ctreffs.de>
 
-<!--</aside>-->
+</aside>
 
 <article class="cv">
 <!-- Lebenslauf -->
