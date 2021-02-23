@@ -1,14 +1,10 @@
 ---
-#layout: default
+layout: default
 permalink: /cv/
+title: "CV"
 ---
 
-% Lebenslauf
-% Christian Treffs
-% 2018-08-08
-
-<!-- Adressdaten & Profilbild -->
-<aside class="contact">
+<!--<aside class="contact">-->
 
 ![Christian Treffs](src/img/Bewerbungsfoto-2015.jpg)
 
@@ -37,7 +33,7 @@ Niedernhausener Str. 49<br/>60326 Frankfurt am Main
 
 <https://ctreffs.de>
 
-</aside>
+<!--</aside>-->
 
 <article class="cv">
 <!-- Lebenslauf -->
