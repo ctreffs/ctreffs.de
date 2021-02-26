@@ -24,4 +24,5 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15"
   gem "jekyll-paginate", "~> 1.1"
   gem "jekyll-twitter-plugin", "~> 2.1"
+  gem "jekyll-pandoc", "~> 2.0"
 end

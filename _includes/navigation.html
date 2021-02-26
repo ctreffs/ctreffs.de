@@ -1,0 +1,16 @@
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarToggler">
+    <a class="navbar-brand" href="/">{{ site.title | escape }}</a>
+    <ul class="navbar-nav my-2 my-lg-0">
+        {% for page in site.pages %}
+        {% if page.title %}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ page.url }}">{{ page.title | escape }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>

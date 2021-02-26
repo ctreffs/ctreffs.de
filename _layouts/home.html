@@ -1,25 +1,20 @@
 ---
 layout: default
 ---
-
 <div class="row align-items-center text-center w-100">
     <div class="offset-3 col-6 text-center">
-        <img class="img-fluid img-thumbnail rounded-circle img-profile mb-5" src="{{ site.profile_picture }}" alt="{{ site.author.name }}" />
+        <img class="img-fluid img-thumbnail rounded-circle img-profile mb-5" src="{{ site.profile_picture }}?s=200"
+            alt="{{ site.author.name }}" />
         <h1 class="mb-3">Hello, I'm {{ site.author.name }}</h1>
         <h3 class="mb-5">
-            I'm an iOS App developer with passion for Swift. 
+            I'm an iOS App developer with passion for Swift.
             In my spare time I work on a lot of side projects focusing on game development.
             Also I play keyboards at <a href="http://dailygrindband.com">Daily Grind</a>.
         </h3>
         <a class="btn btn-lg btn-outline-info mb-5" href="https://medium.com/@ctreffs">Read my blog on Medium</a>
 
         <ul class="list-inline">
-            {% for account in site.data.accounts %}
-            <li class="list-inline-item">
-            <a class="fa fa-{{ account.icon | downcase }}" title="{{ account.name }}" href="{{ account.link }}"></a>
-            </li>
-            {% endfor %}
+            {% include account_list.html %}
         </ul>
     </div>
 </div>
-
